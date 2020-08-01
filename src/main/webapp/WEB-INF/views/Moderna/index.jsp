@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Moderna Bootstrap Template - Index</title>
+  <title>hsPortal</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -75,6 +75,7 @@
             </ul>
           </li>
           <li><a href="contact.html">Contact Us</a></li>
+          <li><a id ="login" href="">Log In</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -88,7 +89,7 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Moderna</span></h2>
+          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>hsPortal</span></h2>
           <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
           <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
         </div>
@@ -383,6 +384,23 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+  
+  <script>
+  
+  $("#login").on("click", function(){
+	  alert(1);
+  });
+  
+  
+  
+  
+  
+  
+  </script>
+  
+  
+  
 
 </body>
 

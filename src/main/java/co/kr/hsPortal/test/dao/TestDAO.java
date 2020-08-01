@@ -13,8 +13,6 @@ public class TestDAO extends AbstractDAO{
 
 	@SuppressWarnings("unchecked")
 	public List<Map<String, Object>> selectBoardList() {
-		//System.out.println((List<Map<String, Object>>)selectList("sample.selectBoardList2"));
-		//System.out.println((List<TestBoard>)selectList("sample.selectBoardList"));
 		return (List<Map<String, Object>>)selectList("sample.selectBoardList2");
 	}
 	
