@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
     <head>
-        <title>로그인 / 회원가입 폼 템플릿</title>
+        <title>로그인 / 회원가입</title>
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
@@ -22,7 +22,7 @@
                     <input type="text" class="input-field" placeholder="아이디" required>
                     <input type="password" class="input-field" placeholder="비밀번호" required>
                     <input type="checkbox" class="checkbox"><span>Remember Password</span>
-                    <button class="submit">Login</button>              
+                    <button class="submit">로그인</button>              
                 </form>
                 <form id="register" action="" class="input-group">
                     <input type="text" class="input-field" placeholder="아이디" required>
@@ -33,7 +33,7 @@
                     <input type="email" class="input-field" placeholder="휴대전화" required>
 
                     <input type="checkbox" class="checkbox"><span>Terms and conditions</span>
-                    <button class="submit">REGISTER</button>
+                    <button class="submit">가입하기</button>
                 </form>
             </div>
         </div>

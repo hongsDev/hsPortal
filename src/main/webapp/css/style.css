@@ -6,7 +6,7 @@
 .wrap {
     height: 100%;
     width: 100%;
-    background-image: url(../images/background.jpg);
+    background:linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../assets/img/hero-bg.jpg") center top no-repeat;
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -21,7 +21,7 @@
     overflow: hidden;
 }
 .button-wrap {
-    width: 230px;
+    width: 220px;
     margin: 35px auto;
     position: relative;
     box-shadow: 0 0 600px 9px #fcae8f;
