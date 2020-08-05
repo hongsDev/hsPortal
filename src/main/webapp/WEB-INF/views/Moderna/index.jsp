@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 <html>
@@ -35,6 +36,9 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  
+ <%@ include file="/WEB-INF/include/include-header.jsp"%>
+  
 </head>
 
 <body>
@@ -51,13 +55,14 @@
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li><a>홈</a></li>
+          <!-- 
           <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
+          <li><a href="portfolio.html">Portfolio</a></li> -->
+          <li><a id="goTestBoard">자유 게시판</a></li>
+          <li><a >테스트1</a></li>
+          <li class="drop-down"><a>테스트2</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="drop-down"><a href="#">Drop Down 2</a>
@@ -74,8 +79,8 @@
               <li><a href="#">Drop Down 5</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a id ="login" href="">Log In</a></li>
+          <li><a id="login">로그인</a></li>
+          <li><a id="addUser">회원가입</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -386,22 +391,42 @@
   <script src="assets/js/main.js"></script>
   
   
+  
   <script>
-  
-  $("#login").on("click", function(){
-	  alert(1);
-  });
-  
-  
-  
-  
-  
-  
+  	$(document).ready(function(){ 
+		$("#goTestBoard").on("click", function(e){ 
+			//글쓰기 버튼 
+			e.preventDefault(); 
+			fn_goTestBoard(); 
+		});	
+				
+		$("#addUser").on("click", function(e){ 
+			//글쓰기 버튼 
+			e.preventDefault(); 
+			fn_goAddUser(); 
+		});	
+	}); 
+  	
+  	function fn_goTestBoard(){
+		var comSubmit = new ComSubmit();
+		comSubmit.setUrl("<c:url value='/test/boardList1.do' />");	
+		comSubmit.submit();
+  	}
+  	
+  	
+
+  	function fn_goAddUser(){
+		var comSubmit = new ComSubmit();
+		comSubmit.setUrl("<c:url value='/common/addUser.do' />");	
+		comSubmit.submit();
+  	}
+  	
+  	
+  	
+  	
   </script>
   
-  
-  
-
 </body>
+<%@ include file="/WEB-INF/include/include-body.jsp"%>
 
 </html>
