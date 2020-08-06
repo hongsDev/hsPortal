@@ -61,9 +61,8 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li> -->
           <li><a id="goTestBoard">자유 게시판</a></li>
-          <li><a >테스트1</a></li>
-        
-          <li><a id="login">테스트2</a></li>
+          <li><a >테스트11</a></li>        
+          <li><a id="login">테스트22</a></li>
           <li><a id="addUser">로그인</a></li>
         </ul>
       </nav><!-- .nav-menu -->

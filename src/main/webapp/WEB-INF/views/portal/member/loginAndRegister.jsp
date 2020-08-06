@@ -4,7 +4,41 @@
     <head>
         <title>로그인 / 회원가입</title>
         <link rel="stylesheet" href="../../css/style.css">
+        
+		<%@ include file="/WEB-INF/include/include-header.jsp"%>
     </head>
+    
+	 <script>
+	  	$(document).ready(function(){ 
+			$("#loginSubmit").on("click", function(e){ 
+				//글쓰기 버튼 
+				e.preventDefault(); 
+				fn_login(); 
+			});	
+					
+			$("#registSubmit").on("click", function(e){ 
+				//글쓰기 버튼 
+				e.preventDefault(); 
+				fn_regist(); 
+			});	
+		}); 
+	  	
+	  	function fn_login(){
+	  		alert(1);
+			var comSubmit = new ComSubmit("login");
+			comSubmit.setUrl("<c:url value='/portal/board/boardList1.do' />");	
+			comSubmit.submit();
+	  	}
+	
+	  	function fn_regist(){
+	  		alert(2);
+			var comSubmit = new ComSubmit("register");
+			comSubmit.setUrl("<c:url value='/portal/member/regist.do' />");	
+			comSubmit.submit();
+	  	}
+  	
+  	</script>
+    
     <body>
         <div class="wrap">
             <div class="form-wrap">
@@ -22,22 +56,23 @@
                     <input type="text" class="input-field" placeholder="아이디" required>
                     <input type="password" class="input-field" placeholder="비밀번호" required>
                     <input type="checkbox" class="checkbox"><span>Remember Password</span>
-                    <button class="submit">로그인</button>              
+                    <button id="loginSubmit" class="submit">로그인</button>              
                 </form>
-                <form id="register" action="" class="input-group">
-                    <input type="text" class="input-field" placeholder="아이디" required>
-                     <input type="password" class="input-field" placeholder="비밀번호" required>
-                    <input type="password" class="input-field" placeholder="비밀번호 재확인" required>
-                    <input type="email" class="input-field" placeholder="이름" required>
-                    <input type="email" class="input-field" placeholder="생년월일" required>
-                    <input type="email" class="input-field" placeholder="휴대전화" required>
+                <form id="register" action="/portal/member/regist.do" class="input-group">
+                    <input type="text" name ="userId" class="input-field" placeholder="아이디" required>
+                    <input type="password" name ="passWord" class="input-field" placeholder="비밀번호" required>
+                    <input type="password" name ="confirmPassWord" class="input-field" placeholder="비밀번호 재확인" required>
+                    <input type="text" name ="userNm" class="input-field" placeholder="이름" required>
+                    <input type="text" name ="birthDay" class="input-field" placeholder="생년월일" required>
+                    <input type="text" name ="phoneNumber" class="input-field" placeholder="휴대전화" required>
 
                     <input type="checkbox" class="checkbox"><span>Terms and conditions</span>
-                    <button class="submit">가입하기</button>
+                    <button id="registSubmit" class="submit">가입하기</button>
                 </form>
             </div>
         </div>
         <script>
+      
             var x = document.getElementById("login");
             var y = document.getElementById("register");
             var z = document.getElementById("btn");            
@@ -53,6 +88,11 @@
                 y.style.left = "50px";
                 z.style.left = "110px";
             }
+            
+            
+            
         </script>
     </body>
+    <%@ include file="/WEB-INF/include/include-body.jsp"%>
+    
 </html>
