@@ -1,7 +1,7 @@
 package com.hsCompany.portal.member.vo;
 
 public class Member {
-
+	
 	private String userId;
 	
 	private String userNm;
@@ -12,7 +12,20 @@ public class Member {
 	
 	private String birthDay;
 	
+	private String email;
 	
+	
+	
+	public String getEmail() {
+		return email;
+	}
+
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
 	public Member() {
 		
 	}
