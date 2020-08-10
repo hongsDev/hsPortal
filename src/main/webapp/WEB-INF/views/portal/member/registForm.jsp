@@ -63,10 +63,9 @@
 					<label for="userId">휴대전화</label>
 					</h6>
 					<input type="text" name="phoneNumber" id="phoneNumber" style="width: 500px; height:50px;">
-				</div>
-				
-				<div style="margin:10px auto;">
-					<input type="submit" value="가입하기" style="border-radius:50px; background:#68A4C4; border:0; width:200px; height:50px">
+				</div> 
+				<div style="margin:40px auto;">
+					<input type="submit" value="가입하기" style="width:500px; height:50px; background:#68A4C4;">
 				</div>
             
 			</div>

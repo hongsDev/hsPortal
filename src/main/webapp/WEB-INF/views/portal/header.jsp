@@ -55,8 +55,9 @@
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
           <li><a href="<c:url value='/portal/index.do'/>">HOME</a></li>
+           <li><a id="selfIntroduce" href="<c:url value='/portal/member/selfIntroduce.do'/>">자기소개</a></li> 
           <li><a id="goBoardList" href="<c:url value='/portal/board/boardList1.do'/>">자유 게시판</a></li> 
-          <li><a id="login.jsp" href="<c:url value='/portal/member/login.do'/>">로그인</a></li>
+          <li><a id="login.jsp" href="<c:url value='/portal/member/loginForm.do'/>">로그인</a></li>
           <li><a id="registForm.jsp" href="<c:url value='/portal/member/registForm.do'/>">회원가입</a></li>
         </ul>
       </nav><!-- .nav-menu -->

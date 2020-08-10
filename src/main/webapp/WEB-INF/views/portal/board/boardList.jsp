@@ -1,12 +1,22 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-<%@ include file="/WEB-INF/include/include-header.jsp"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page session="false" %>
+<html>
+
+<head>  
+ <%@ include file="/WEB-INF/include/include-header.jsp"%>
 </head>
+
 <body>
-	<h2>게시판 목록</h2>
+  <%@ include file="/WEB-INF/views/portal/header.jsp"%>
+  <main id="main">
+  
+  
+    <!-- ======= Why Us Section ======= -->
+    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+
+
 	<table class="board_list">
 		<colgroup>
 			<col width="10%" />
@@ -73,5 +83,22 @@
 			comSubmit.submit(); 
 		} 
 	</script>
+
+
+
+      </div>
+    </section><!-- End Why Us Section -->
+    
+	
+
+
+   
+  </main><!-- End #main -->
+   
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <%@ include file="/WEB-INF/views/portal/footer.jsp"%>
 </body>
+<%@ include file="/WEB-INF/include/include-header.jsp"%>
+
 </html>
