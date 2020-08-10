@@ -15,10 +15,17 @@ import com.hsCompany.portal.board.vo.Board;
 public class MemberController {	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
-	@RequestMapping(value="/portal/member/loginAndRegister.do")
-	public String goToLoginAndRegister(Board board) throws Exception{
-		System.out.println("/portal/member/loginAndRegister.do");
-		return "/portal/member/loginAndRegister";
+	@RequestMapping(value="/portal/member/login.do")
+	public String login(Board board) throws Exception{
+		System.out.println("/portal/member/login.do");
+		return "/portal/member/login";
+	}
+	
+	
+	@RequestMapping(value="/portal/member/register.do")
+	public String register(Board board) throws Exception{
+		System.out.println("/portal/member/register.do");
+		return "/portal/member/register";
 	}
 	
 	

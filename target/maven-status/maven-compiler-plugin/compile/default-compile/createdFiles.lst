@@ -1,8 +1,9 @@
-com/hsCompany/common/AbstractDAO.class
-com/hsCompany/portal/board/vo/Board.class
-com/hsCompany/portal/HomeController.class
-com/hsCompany/portal/member/controller/MemberController.class
-com/hsCompany/portal/board/dao/BoardDAO.class
-com/hsCompany/portal/board/controller/BoardController.class
-com/hsCompany/portal/board/service/BoardService.class
-com/hsCompany/portal/board/service/BoardServiceImpl.class
+com\hsCompany\portal\board\service\BoardService.class
+com\hsCompany\common\AbstractDAO.class
+com\hsCompany\portal\HomeController.class
+com\hsCompany\portal\member\vo\Member.class
+com\hsCompany\portal\member\controller\MemberController.class
+com\hsCompany\portal\board\vo\Board.class
+com\hsCompany\portal\board\service\impl\BoardServiceImpl.class
+com\hsCompany\portal\board\controller\BoardController.class
+com\hsCompany\portal\board\dao\BoardDAO.class

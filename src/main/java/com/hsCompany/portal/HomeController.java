@@ -17,9 +17,7 @@ public class HomeController {
 	//메인 페이지 호출 
 	@RequestMapping(value="/portal/index.do") 
 	public ModelAndView ModernaIndex()throws Exception{
-		System.out.println("/portal/index.do call");
-		ModelAndView mv = new ModelAndView("/portal/index");			
-	
+		ModelAndView mv = new ModelAndView("/portal/index");
 		return mv;
 	}
 
