@@ -14,8 +14,19 @@ public class Member {
 	
 	private String email;
 	
+	private String gender;
+		
 	
-	
+	public String getGender() {
+		return gender;
+	}
+
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+
 	public String getEmail() {
 		return email;
 	}

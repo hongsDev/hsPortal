@@ -54,10 +54,10 @@
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li><a>HOME</a></li>
+          <li><a href="<c:url value='/portal/index.do'/>">HOME</a></li>
           <li><a id="goBoardList" href="<c:url value='/portal/board/boardList1.do'/>">자유 게시판</a></li> 
-          <li><a id="loginAndRegister.jsp" href="<c:url value='/portal/member/loginAndRegister.do'/>">로그인</a></li>
-          <li><a id="loginAndRegister.jsp" href="<c:url value='/portal/member/loginAndRegister.do'/>">회원가입</a></li>
+          <li><a id="login.jsp" href="<c:url value='/portal/member/login.do'/>">로그인</a></li>
+          <li><a id="registForm.jsp" href="<c:url value='/portal/member/registForm.do'/>">회원가입</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
