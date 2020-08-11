@@ -11,6 +11,38 @@
   <%@ include file="/WEB-INF/views/portal/header.jsp"%>
   <main id="main">
 
+
+   <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-7 video-box">
+         		
+        
+
+
+          </div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center p-5">
+	           <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200" style="height:200px; padding-top:30px;" >
+	            	<span style="margin-left:40px; font-size:9px;">포탈서비스를 안전하고 편리하게 이용하세요</span>
+					<input type="button" value="HSPORTAL 로그인" style="background:#68A4C4; border:0; width:80%; height:50px; margin-left:40px; margin-bottom:20px;margin-top:20px;"
+					 onclick="location.href='<c:url value='/portal/member/loginForm.do'/>'">
+			           <div style="margin-left:45px;">
+				            <h6 class="title" style="margin-left:40px; ">
+				            <a href="">아이디</a> | 
+				            <a href="">비밀번호찾기</a> |
+				            <a href="<c:url value='/portal/member/registForm.do'/>">회원가입</a>
+				            </h6>
+			            </div>
+			    </section><!-- End Why Us Section -->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+    
+    
     <!-- ======= Services Section ======= -->
     <section class="services">
       <div class="container">

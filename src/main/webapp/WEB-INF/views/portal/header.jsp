@@ -54,11 +54,14 @@
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li><a href="<c:url value='/portal/index.do'/>">HOME</a></li>
-           <li><a id="selfIntroduce" href="<c:url value='/portal/member/selfIntroduce.do'/>">자기소개</a></li> 
-          <li><a id="goBoardList" href="<c:url value='/portal/board/boardList1.do'/>">자유 게시판</a></li> 
-          <li><a id="login.jsp" href="<c:url value='/portal/member/loginForm.do'/>">로그인</a></li>
-          <li><a id="registForm.jsp" href="<c:url value='/portal/member/registForm.do'/>">회원가입</a></li>
+           <li><a id="selfIntroduce" href="<c:url value='/portal/member/selfIntroduce.do'/>">자기소개서</a></li> 
+          <li><a id="goBoardList" href="<c:url value='/portal/board/boardList1.do'/>">게시판</a></li> 
+          <li><a id="goBoardList" href="<c:url value='/portal/board/boardList1.do'/>">About Us</a></li> 
+          <li><a id="goBoardList" href="<c:url value='/portal/board/boardList1.do'/>">Services</a></li> 
+          <li><a id="goBoardList" href="<c:url value='/portal/board/boardList1.do'/>">Portfolio</a></li>
+          <li><a id="goBoardList" href="<c:url value='/portal/board/boardList1.do'/>">Team</a></li>
+          <li><a id="goBoardList" href="<c:url value='/portal/board/boardList1.do'/>">Blog</a></li>
+          <li><a id="goBoardList" href="<c:url value='/portal/board/boardList1.do'/>">Contact Us</a></li>           
         </ul>
       </nav><!-- .nav-menu -->
 
