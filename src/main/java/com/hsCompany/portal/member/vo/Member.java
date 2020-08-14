@@ -10,12 +10,49 @@ public class Member {
 	
 	private String phoneNumber;
 	
-	private String birthDay;
-	
 	private String email;
+
+	private String userType;
+	
+	private String lsatLogin;
+	
+	private String registerDate;	
+	
+	private String birthDay;	
 	
 	private String gender;
-		
+			
+	
+	public String getUserType() {
+		return userType;
+	}
+
+
+	public void setUserType(String userType) {
+		this.userType = userType;
+	}
+
+
+	public String getLsatLogin() {
+		return lsatLogin;
+	}
+
+
+	public void setLsatLogin(String lsatLogin) {
+		this.lsatLogin = lsatLogin;
+	}
+
+
+	public String getRegisterDate() {
+		return registerDate;
+	}
+
+
+	public void setRegisterDate(String registerDate) {
+		this.registerDate = registerDate;
+	}
+
+
 	
 	public String getGender() {
 		return gender;

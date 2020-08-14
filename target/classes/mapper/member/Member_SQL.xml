@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="member">
+	<select id = "selectBoardList" resultType="com.hsCompany.portal.board.vo.Board">
+		SELECT IDX,
+			   TITLE,			    
+			   HIT_CNT  	 
+		FROM TEST_BOARD
+		ORDER BY IDX DESC
+	</select>	
+	
+	<select id = "selectBoardList2" resultType="hashmap">
+		SELECT IDX,
+			   TITLE,			    
+			   HIT_CNT,
+			   CREA_DTM			  	 
+		FROM TEST_BOARD
+	</select>
+	
+	<insert id="insertMember" parameterType="com.hsCompany.portal.member.vo.Member" >
+	<![CDATA[
+		INSERT INTO MEMBER
+		(
+		USER_ID,
+		USER_NM,
+		PASSWORD,
+		PHONENUMBER,
+		EMAIL,
+		USER_TYPE,
+		LAST_LOGIN,
+		REGISTER_DATE		
+		)		
+		VALUES
+		(
+		#{userId},
+		#{userNm},
+		#{passWord},
+		#{phoneNumber},
+		#{email},
+		#{userType},
+		#{lsatLogin},
+		#{registerDate}
+		)
+		]]>
+	</insert>
+</mapper>

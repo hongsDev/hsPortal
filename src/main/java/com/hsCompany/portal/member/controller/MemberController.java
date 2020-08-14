@@ -1,17 +1,27 @@
 package com.hsCompany.portal.member.controller;
 
+import javax.annotation.Resource;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.hsCompany.portal.HomeController;
+import com.hsCompany.portal.board.service.BoardService;
 import com.hsCompany.portal.board.vo.Board;
+import com.hsCompany.portal.member.service.MemberService;
 import com.hsCompany.portal.member.vo.Member;
 
 @Controller
 public class MemberController {	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	
+	
+	@Resource(name="MemberService")
+	private MemberService memberService;
+	
+	
 		
 		
 	@RequestMapping(value="/portal/member/selfIntroduce.do")
@@ -52,8 +62,9 @@ public class MemberController {
 		System.out.println(member);
 		System.out.println(member.getUserId());
 		System.out.println(member.getPassWord());
-		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");		
 		
+		memberService.insertMember(member);		
 		return "/portal/index";
 	}
 	
